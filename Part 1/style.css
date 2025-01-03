@@ -1,0 +1,17 @@
+.test {
+
+background-color: red;
+font-family: 'Arial', sans-serif; 
+
+}/*here test class .test targets all elementt having class name*/
+#button1 {
+
+background-color: black;
+
+
+font-family: 'Arial', sans-serif; 
+
+}/* #button is used to target specfic class
+
+/*
+*/

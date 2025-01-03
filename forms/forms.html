@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="submit_form.php" method="POST">
+    <!--action tells url where the form data should be summitted-->
+    <!--method definews how data will be sent-->
+ 
+    <input type="text" name="username" placeholder="Enter username">
+  <!--input elements is used to create interacitve controls 
+  type sepcifices the type of input ((text, password, email, number, checkbox, radio, etc.))
+
+ name: Defines the name of the input, which is used to reference form data after submission.
+placeholder: A hint that displays inside the input .
+
+text: Text input (default).
+password: Password input (hides the text).
+email: Validates email format.
+checkbox: Checkbox (allows multiple selections).
+radio: Radio button (allows only one selection among multiple options).
+submit: Submit button (sends the form data).
+number: Numeric input (restricts input to numbers).
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  -->
+    <!-- Password Input -->
+    <input type="password" name="password" placeholder="Enter password">
+    
+    <!-- Email Input -->
+    <input type="email" name="email" placeholder="Enter email">
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+    <select name="country">
+      <option value="us">United States</option>
+      <option value="ca">Canada</option>
+      <option value="uk">United Kingdom</option>
+    </select>
+    <!-- slelect gives user to choose various option
+     -->
+
+     <textarea name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+<!--text area is used for multiline input-->
+
+<!-- Attributes
+ 
+action~~ ecifies the URL where the form data will be sent when the form is submitted
+Method ~~
+GET = Data in the URL (easy to see, less secure).
+POST = Data in the background (more secure, better for sensitive or large data).
+
+GET: You're on an online store, and you fill out a filter form to search for products by category, price, etc. After submitting, the URL changes with the filter data attached in the query string.
+
+POST: You want to log in to your account. You submit a form with your username and password. The password isn't visible in the URL because it is sent in the background, securely.
+
+
+-->
+
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    /* General styling for the form */
+    form {
+      width: 100%;
+      max-width: 500px; /* Limits form width to 500px */
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for form inputs and textarea */
+    input, textarea, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background-color: #f4f4f4;
+      font-size: 16px;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #4CAF50;
+      background-color: #ffffff;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Styling for the labels */
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* Styling for error message */
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">User Registration Form</h2>
+
+  <form action="/submit" method="POST" name="registrationForm">
+
+    <!-- Name input field -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email input field -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Password input field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+    <!-- Gender radio buttons -->
+    <label>Gender:</label>
+    <label for="gender-male">
+      <input type="radio" id="gender-male" name="gender" value="male" checked> Male
+    </label>
+    <label for="gender-female">
+      <input type="radio" id="gender-female" name="gender" value="female"> Female
+    </label>
+    <label for="gender-other">
+      <input type="radio" id="gender-other" name="gender" value="other"> Other
+    </label>
+
+    <!-- Subscription checkbox -->
+    <label for="subscribe">
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Subscribe to our newsletter
+    </label>
+
+    <!-- Country selection -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="usa">United States</option>
+      <option value="canada">Canada</option>
+      <option value="uk">United Kingdom</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <!-- Additional comments -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Any additional information or comments"></textarea>
+
+    <!-- Submit button -->
+    <button type="submit">Register</button>
+
+  </form>
+
+</body>
+</html>
