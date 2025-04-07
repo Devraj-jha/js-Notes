@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column; /* Make sure everything is stacked vertically */
+}
+
+/* Heading Style */
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px; /* Add space between heading and form */
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Form Styling */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #5c9dfd;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #5c9dfd;
+  color: white;
+  font-size: 1.1em;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3b7dd8;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #5c9dfd;
+}
+
+select {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+select:focus {
+  border-color: #5c9dfd;
+}
+
+label[for="subscribe"] {
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+label[for="gender-male"],
+label[for="gender-female"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#subscribe {
+  margin-top: 10px;
+}
+
+#comments {
+  font-size: 1em;
+}
+
+#country {
+  font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
